@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 2</title>
+</head>
+
+<body>
+    <script>
+        // Program to swap two numbers using a temporary variable
+        document.write("01. Program to swap two numbers using a temporary variable <br>")
+        let a = 10
+        let b = 20
+        document.write("Before Swapping : ", `a = ${a}, b =${b}`, "<br>")
+        let temp = a
+        a = b
+        b = temp
+        document.write("After Swapping : <br>", `a = ${a}, b = ${b}`, "<br>")
+
+        document.write("<br><br>")
+
+
+
+
+
+        // Program to swap two numbers w/o using temporary variable
+        let x = 30
+        let y = 40
+
+        document.write("02. Program to swap two numbers w/o using temporary variable <br>")
+
+        document.write("Before Swapping : ", `x = ${x}, y = ${y}`, "<br>")
+
+        x = x + y
+        y = x - y
+        x = x - y
+        document.write("After Swapping : x= ", x, " y =", y, "<br>")
+
+       document.write("<br><br>")
+
+
+
+
+
+        // Program to convert Celsius to fahrenheit
+        document.write("03. Program to convert Celsius to fahrenheit <br>")
+        let celsius = 20
+        // document.write("Celsius = ",celsius, "<br>")
+        let fahrenheit = (celsius * (9 / 5) + 32)
+        document.write("Celsius to fahrenheit = ", fahrenheit, "<br>")
+        let cf = ((fahrenheit - 32) * (5 / 9))
+        document.write("fahrenheit to Celsius = ", cf)
+        // (20°C × 9/5) + 32 = 68°F
+        // f to c
+        // (32°F − 32) × 5/9 = 0°C
+        document.write("<br><br>")
+
+
+
+
+        // Program to find square of a number
+        document.write("04. Program to find square of a number <br>")
+        let n = 6
+        document.write("Number = ", n, "<br>")
+        document.write(`Square of ${n} = `, n ** 2)
+        document.write("<br><br>")
+
+
+
+
+        // Program to find cube of a number
+        document.write("05. Program to find cube of a number <br>")
+        let n1 = 5
+        document.write("Number = ", n1, "<br>")
+        document.write(`Cube of ${n1} = `, n1 ** 4, "<br>")
+        document.write("<br><br>")
+
+
+
+        // Program to find area of square, circle, rectangle, triangle
+        document.write("06. Program to find area of square, circle, rectangle, triangle <br>")
+        let length = 10
+        let breadth = 20
+
+        let radius = 4
+        const pi = 3.14
+        document.write("length = ", length, "<br>breadth = ", breadth, "<br>radius = ", radius, "<br>")
+
+        document.write(`Area of rectangle = `, length * breadth, "<br>")
+        document.write(`Area of square = `, length ** 2, "<br>")
+        document.write(`Area of circle = `, radius * radius * pi, "<br>")
+        document.write(`Area of triangle= `, (0.5 * (breadth * length)))
+        document.write("<br><br>")
+
+
+
+
+        // Program to find perimeter of rectangle, square, circle, triangle
+        document.write("07. Program to find perimeter of square, circle, rectangle, triangle <br>")
+        document.write(`Perimeter of rectangle = `, 2 * (length + breadth), "<br>")
+        document.write(`Perimeter of square = `, 4 * length, "<br>")
+        document.write(`Perimter of circle = `, 2 * radius * pi, "<br>")
+        let hyp = Math.sqrt(breadth * breadth + length * length)
+        document.write(`Perimeter of triangle= ${length + breadth + hyp}`)
+        document.write("<br><br>")
+
+
+
+
+
+        // Program to find simple interest & compound interest
+        document.write("08. Program to find simple interest & compound interest <br>")
+        // S.I. = (P × R × T)/100
+        let p = 10000
+        let r = 0.5 / 100
+        let r2 = 0.5
+        let t = 2
+        let n2 = 12
+        document.write("principal amount =", p, "<br>rate = ", r, "<br>time = ", t, "<br>number of time = ", n2, "<br>")
+        let si = ((p * r2 * t) / 100)
+        document.write("Simple interest = ", si, "<br>")
+        let ci = p * Math.pow(1 + (r / n2), n2 * t)
+        document.write("Compound interest = ", ci)
+        document.write("<br><br>")
+
+
+
+
+        // Program to find largest among two numbers
+        document.write("09. Program to find largest among two numbers <br>")
+        let num1 = 10
+        let num2 = 15
+        let num3 = 20
+        document.write(`Number1 = ${num1} <br> Number2 = ${num2} <br>Number3 = ${num3} <br>`)
+        if (num1 > num2) {
+            document.write(`Largest number is ${num1}`)
+        }
+        else {
+            document.write(`Largest number is ${num2}`)
+        }
+        document.write("<br><br>")
+
+
+
+
+        // program to find smallest among three numbers
+        document.write("10. Program to find smallest among three numbers <br>")
+
+
+        if (num1 > num2) {
+            document.write(`Smallest number is ${num1}`)
+        }
+        else if (num2 < num3) {
+            document.write(`Smallest number is ${num2}`)
+        }
+        else {
+            document.write(`Smallest number is ${num3}`)
+        }
+
+        document.write("<br><br>")
+
+
+
+
+
+        // Program to check the given number is zero,positive and negative
+        document.write("11. Program to check the given number is zero,positive and negative <br>")
+
+        let number = 10
+
+        document.write(`Number = ${number} <br>`)
+
+        if (number > 0) {
+            document.write(`${number} is a Positive Number`)
+        }
+        else if (number < 0) {
+            document.write(`${number} is a Negative Number`)
+        }
+        else {
+            document.write(`${number} is a Zero`)
+        }
+        document.write("<br><br>")
+
+
+    </script>
+</body>
+
+</html>
